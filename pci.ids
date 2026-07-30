@@ -1,8 +1,8 @@
 #
 #	List of PCI IDs
 #
-#	Version: 2026.07.01
-#	Date:    2026-07-01 03:15:02
+#	Version: 2026.07.30
+#	Date:    2026-07-30 03:15:01
 #
 #	Maintained by Albert Pool, Martin Mares, and other volunteers from
 #	the PCI ID Project at https://pci-ids.ucw.cz/.
@@ -4199,6 +4199,7 @@
 		1eae 8601  RX-96TS316W7 [SWIFT RX 9060 XT OC White Triple Fan Gaming Edition 16GB]
 	75a0  Aqua Vanjaram [Instinct MI350X]
 	75a3  Aqua Vanjaram [Instinct MI355X]
+	75a8  Aqua Vanjaram [Instinct MI350P]
 	7833  RS350 Host Bridge
 	7834  RS350 [Radeon 9100 PRO/XT IGP]
 	7835  RS350M [Mobility Radeon 9000 IGP]
@@ -13641,8 +13642,10 @@
 	2db9  GB207GLM [RTX PRO 500 Blackwell Generation Laptop GPU]
 	2dd8  GB207M [GeForce RTX 5050 Max-Q / Mobile]
 	2df9  GB207GLM [RTX PRO 500 Blackwell Embedded GPU]
-	2e03  GB20B [JMJWOA-Generic-GPU]
+	2e03  GB20B [RTX Spark N1X (6144-core Blackwell RTX GPU)]
+	2e06  GB20B [RTX Spark N1X (5120-core Blackwell RTX GPU)]
 	2e12  GB20B [GB10]
+	2e13  GB20B [Desktop Device]
 # N1X
 	2e2a  GB20B [JMJWOA-Generic-GPU]
 	2f04  GB205 [GeForce RTX 5070]
@@ -13651,7 +13654,13 @@
 	2f38  GB205GLM [RTX PRO 3000 Blackwell Generation Laptop GPU]
 	2f58  GB205M [GeForce RTX 5070 Ti Mobile]
 	2f80  GB205 High Definition Audio Controller
-	3040  GR100
+	2f95  Vera Rubin CPU
+	2f96  Vera Rubin CPU
+	2f97  Vera Rubin CPU
+	2f98  Vera Rubin CPU
+	3000  GR100 [Reserved Dev ID A]
+	3021  GR100 [PCIe Faber]
+	3040  GR100 [Reserved Dev ID B]
 	30c0  GR102
 	3180  GB110 [Reserved Dev ID A]
 	3182  GB110 [B300 SXM6 AC]
@@ -21878,6 +21887,21 @@
 		14e4 d125  BCM57608 2x200G PCIe Ethernet NIC
 		193d 105b  NIC-ETH2030F-LP-2P 2x200G PCIe Ethernet NIC
 		193d 105c  NIC-ETH4030F-LP-1P 1x400G PCIe Ethernet NIC
+	1780  BCM57708 50Gb/100Gb/200Gb/400Gb/800Gb Ethernet
+		14e4 1043  BCM957708 1x800G OCP Ethernet NIC
+		14e4 1143  BCM957708 1x800G OCP Ethernet NIC
+		14e4 1443  BCM957708 1x800G OCP Ethernet NIC
+		14e4 1543  BCM957708 1x800G OCP Ethernet NIC
+		14e4 1843  BCM957708 1x800G OCP Ethernet NIC
+		14e4 1943  BCM957708 1x800G OCP Ethernet NIC
+		14e4 8023  BCM957708 2x400G PCIe Ethernet NIC
+		14e4 8043  BCM957708 1x800G PCIe Ethernet NIC
+		14e4 8123  BCM957708 2x400G PCIe Ethernet NIC
+		14e4 8143  BCM957708 1x800G PCIe Ethernet NIC
+		14e4 9023  BCM957708 2x400G PCIe Ethernet NIC
+		14e4 9043  BCM957708 1x800G PCIe Ethernet NIC
+		14e4 9123  BCM957708 2x400G PCIe Ethernet NIC
+		14e4 9143  BCM957708 1x800G PCIe Ethernet NIC
 	1800  BCM57502 NetXtreme-E Ethernet Partition
 	1801  BCM57504 NetXtreme-E Ethernet Partition
 		1590 0420  Ethernet NPAR 6310C Adapter
@@ -23304,8 +23328,9 @@
 	5049  SN8000S NVMe SSD
 	504a  WD Blue SN5000 NVMe SSD (DRAM-less)
 	5050  WD PC SN8050S / WD_BLACK SN8100 NVMe SSD
-	5062  WD PC SN5100S NVMe SSD (DRAM-less)
-	5063  WD Blue SN5100 NVMe SSD (DRAM-less)
+	5061  PC SN5100S M.2 2230 NVMe SSD (DRAM-less)
+	5062  PC SN5100S M.2 2242 NVMe SSD (DRAM-less)
+	5063  PC SN5100S / WD Blue SN5100 M.2 2280 NVMe SSD (DRAM-less)
 15b8  ADDI-DATA GmbH
 	1001  APCI1516 SP controller (16 digi outputs)
 	1003  APCI1032 SP controller (32 digi inputs w/ opto coupler)
@@ -26263,7 +26288,11 @@
 	0020  ADQ14
 	0023  ADQ7
 	0026  ADQ8
-	0031  ADQ3
+	0031  ADQ32/ADQ33
+	0032  ADQ System Manager
+	0033  ADQ36
+	0034  ADQ30
+	0035  ADQ35
 	2014  TX320
 	2019  S6000
 # now owned by HGST (a Western Digital subsidiary)
@@ -27321,7 +27350,7 @@
 1cfa  Corsair Memory, Inc
 1cfd  Mangstor
 	6300  MX6300 series PCIe x8 NVMe SSD
-1d00  Pure Storage
+1d00  Everpure, Inc.
 1d05  AIstone Global Limited
 	6027  B760-N2D5 motherboard
 	7001  H610-N2 motherboard
@@ -27679,6 +27708,7 @@
 	2263  NVMe PCIe SSD 110S/112S/120S/MTE300S/MTE400S/MTE652T2 (DRAM-less)
 	2264  NVMe PCIe SSD 250H
 	2267  NVMe PCIe SSD 220S/240S/MTE710T
+	2268  NVMe PCIe SSD 245S (DRAM-less)
 	2269  NVMe PCIe SSD 410S (DRAM-less)
 	5766  NVMe PCIe SSD 110Q (DRAM-less)
 1d7c  Aerotech, Inc.
@@ -27731,6 +27761,9 @@
 	1466  Data Fabric: Device 18h; Function 6
 	1467  Data Fabric: Device 18h; Function 7
 	1468  NTBCCP
+	14ab  HGE1000 1000/100/10 Mb Ethernet Controller
+	200b  HGE2500 2500/1000/100/10 Mb Ethernet Controller
+	200c  HGE2500 1000/100/10 Mb Ethernet Controller
 	6211  K100_AI
 	7901  FCH SATA Controller [AHCI mode]
 	7904  FCH SATA Controller [AHCI mode]
@@ -29068,6 +29101,10 @@
 1ec9  Wingtech Group(HongKong)Limited
 1eca  Lightmatter
 	0000  Envise-B
+# This Vendor ID 1ecc is officially allocated to Sunrise AI Inc. by PCI-SIG.
+1ecc  Sunrise AI Inc.
+# This DID 0200 corresponds to the standard PCIe version of Sun S2 GPU.
+	0200  Sun S2 Graphics Controller[Sun S2-X1 PCIe]
 1ed0  Hosin Global Electronics
 	2283  Patriot P300 NVMe SSD (DRAM-less)
 1ed2  FuriosaAI, Inc.
@@ -29646,15 +29683,15 @@
 	1005  CONFLUX-2200P NVMe Controller
 	1011  K3-T Family
 		1dcf 0363  K3_F2_10G_PCIE 2*10GE Ethernet Adapter
-		1f47 0001  FLEXFLOW-3100T 2*10GE Ethernet Adapter
-		1f47 0002  FLEXFLOW-3100T 4*10GE Ethernet Adapter
-		1f47 0003  FLEXFLOW-3100T 2*25GE Ethernet Adapter
-		1f47 0004  FLEXFLOW-3100T 4*25GE Ethernet Adapter
+		1f47 0001  F31TX2S 2*10GE Ethernet Adapter
+		1f47 0002  F31TX4S 4*10GE Ethernet Adapter
+		1f47 0003  F31TA2S 2*25GE Ethernet Adapter
+		1f47 0004  F31TA4S 4*25GE Ethernet Adapter
 		1f47 0005  FLEXFLOW-3100T 1*40GE Ethernet Adapter
-		1f47 0006  FLEXFLOW-3100T 1*100GE Ethernet Adapter
-		1f47 0007  FLEXFLOW-3100T 2*10GE Ethernet Adapter
+		1f47 0006  F31TC1S 1*100GE Ethernet Adapter
+		1f47 0007  F31TA2K 2*10GE Ethernet Adapter
 		1f47 0008  FLEXFLOW-3100T 4*10GE Ethernet Adapter
-		1f47 0009  FLEXFLOW-3100T 2*25GE Ethernet Adapter
+		1f47 0009  F31TA2K 2*25GE Ethernet Adapter
 		1f47 000a  FLEXFLOW-3100T 4*25GE Ethernet Adapter
 	1012  K3-T Family [Virtual Function]
 	1013  K3-T Family [MGMT Function]
@@ -30302,6 +30339,14 @@
 	1104  NEOTAPX FPGA Timing Synchronization Card
 	1200  MUX Ultimate FPGA Accelerator Card
 	1201  MUX Ultimate FPGA Accelerator Card
+# Requesting adding PCI-SIG registered vendor ID. See https://pcisig.com/membership/member-companies, search Genstoraige Technology Co., Ltd.
+20b4  Genstoraige Technology Co., Ltd.
+	a20c  PT200A PCIe 5.0 NVMe SSD
+	c25c  MQ205 PCIe 5.0 NVMe SSD
+	d20c  PT200 PCIe 5.0 NVMe SSD
+	d25c  PT205 PCIe 5.0 NVMe SSD
+# PT208 PCIe 5.0 NVMe SSD Device ID
+	d28c  PT208 PCIe 5.0 NVMe SSD
 20b5  Shanghai StarFive Technology Co., Ltd.
 20ba  Hangzhou Hikstorage Technology Co., Ltd.
 	1202  NAND memory controller
@@ -30370,6 +30415,11 @@
 2116  ZyDAS Technology Corp.
 # Add Vendor id 0x2123 to pci.ids
 2123  Shanghai Warpdrive Technology Co., Ltd
+# F5950QU2T3072Y02 F5950QU2T6144Y02 F5950QU2T1228Y02
+212b  Flumeio
+# NVMe SSD
+	5951  Flumeio F5950Q
+2136  Dongguan Xincun Chengbang Technology Co., Ltd.
 21b4  Hunan Goke Microelectronics Co., Ltd
 21c3  21st Century Computer Corp.
 22b8  Flex-Logix Technologies
@@ -30416,6 +30466,7 @@
 	5026  NV3 NVMe SSD [E21T] (DRAM-less)
 	5027  NV3 NVMe SSD [E27T] (DRAM-less)
 	5028  NV3 NVMe SSD [SM2268XT2] (DRAM-less)
+	5029  OM8SGP4 PCIe 4 NVMe SSD (TLC) (DRAM-less)
 	502a  FURY Renegade G5 NVMe SSD [SM2508]
 	502b  NV3 NVMe SSD [E29T] (DRAM-less)
 	502c  DC3000ME NVMe SSD [SC5]
@@ -31163,12 +31214,15 @@
 	3d02  Arise1020
 	3d03  Arise-GT-1040
 	3d04  Arise1010
+	3d05  Arise2050
 	3d06  Arise-GT-10C0t
 	3d07  Arise2030
 	3d08  Arise2020
+	3d09  Arise2020C
 	3d0e  Arise10D0
 	3d40  GLF HDMI/DP Audio
 	3d41  GLF HDMI/DP Audio
+	3d42  GLF HDMI/DP Audio
 	3d43  GLF HDMI/DP Audio
 6899  ZT Systems
 # nee Qumranet
@@ -40382,11 +40436,14 @@
 	9db0  Cannon Point-LP PCI Express Root Port #9
 	9db1  Cannon Point-LP PCI Express Root Port #10
 	9db2  Cannon Point-LP PCI Express Root Port #1
+	9db3  Cannon Point-LP PCI Express Root Port #12
 	9db4  Cannon Point-LP PCI Express Root Port #13
 		1028 089e  Inspiron 5482
+	9db5  Cannon Point-LP PCI Express Root Port #14
 	9db6  Cannon Point-LP PCI Express Root Port #15
 	9db8  Cannon Point-LP PCI Express Root Port #1
 	9dbc  Cannon Point-LP PCI Express Root Port #5
+	9dbd  Cannon Point-LP PCI Express Root Port #6
 	9dbe  Cannon Point-LP PCI Express Root Port #7
 	9dbf  Cannon Point PCI Express Root Port #8
 	9dc4  Cannon Point-LP SD Host Controller
@@ -41135,6 +41192,8 @@
 	d743  NVL-HX
 	d744  NVL-UL
 	d745  NVL-HX
+	d74a  NVL-S
+	d74b  NVL-S
 	d750  NVL-P
 	d751  NVL-P
 	d752  NVL-P
